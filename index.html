@@ -143,7 +143,7 @@
             </footer>
         </div>
         <script>
-            // Sample data
+            // some of profiles data
             const profiles = [
                 {
                     name: "RK Prasad",
@@ -163,13 +163,13 @@
                     bio: "Rajesh started his career as a Quality Executive in 2008, and gained expertise in eLearning, digital content delivery, and project management, over these 15+ years. \n\nRajesh has an excellent track record of team management and operational planning, along with good knowledge of eLearning authoring tools such as Storyline, Captivate, and Lectora. \n\nWell-experienced in managing multiple projects for global clients, Rajesh has a keen eye for trends in the tech-enabled learning space. This made him the natural choice for the current role, where he researches the latest tools and tech, and guides the CommLab India team in leveraging them to address training needs faster, better, and er.",
                     image: "https://resources.commlabindia.com/hubfs/cli-main-site/about-us/rajesh-v4.jpg" // Replace with the path to the image
                 }
-                // Add more profiles as needed
             ];
 
             document.addEventListener("DOMContentLoaded", function() {
                 const profileContainer = document.getElementById("profile");
 
                 // Loop through the profiles and create HTML elements for each profile
+                
                 profiles.forEach(profile => {
                     const profileDiv = document.createElement("div");
                     profileDiv.classList = "profileDiv"
@@ -195,6 +195,7 @@
                     bioParagraph.innerHTML = profile.bio.replace(/\n/g, '<br>').replace(/&nbsp;/g, '&nbsp;');
                 
                     // Append elements to the profile container
+                    
                     profileDiv.appendChild(profileImage);
                     profileDiv.appendChild(nameHeader);
                     profileDiv.appendChild(positionParagraph)
@@ -276,13 +277,10 @@
             }
 
             function validatePhone(phone) {
-                // Basic example to validate 10-digit phone number
                 const re = /^\d{10}$/;
                 return re.test(phone);
             }
             
-            // const inputFields = document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"]');
-            // inputFields.forEach(field => field.value = '');
             
         </script>
     </body>
